@@ -6,9 +6,40 @@
   <title>City/Weather Search</title>
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-  <!-- YOUR CODE HERE -->
-  
+<body class="day">
+    <div class="search-container">
+        <input type="text" id="cityInput" placeholder="Enter city name" value="Vancouver">
+        <button id="searchBtn">Search</button>
+    </div>
+
+    <div class="loading" id="loading">Loading...</div>
+    <div class="error" id="error"></div>
+
+    <div class="weather-card" id="weatherCard">
+        <div class="city-header">
+            <h1 class="city-name" id="cityName">Vancouver</h1>
+            <div class="current-temp" id="currentTemp">18.3 °C</div>
+        </div>
+
+        <table class="info-table">
+            <tr>
+                <td>Country</td>
+                <td id="country">Canada</td>
+            </tr>
+            <tr>
+                <td>Timezone</td>
+                <td id="timezone">America/Vancouver</td>
+            </tr>
+            <tr>
+                <td>Population</td>
+                <td id="population">600000</td>
+            </tr>
+            <tr>
+                <td>Tomorrow's Forecast</td>
+                <td id="forecast">Low: 11.5 °C<br>Max: 21.5 °C</td>
+            </tr>
+        </table>
+    </div>
   <script src="./app.js"></script>
 </body>
 </html>
